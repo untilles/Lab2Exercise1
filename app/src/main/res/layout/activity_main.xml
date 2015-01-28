@@ -73,7 +73,9 @@
             android:id="@+id/madd"
             android:layout_row="3"
             android:layout_column="0"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:nestedScrollingEnabled="false"
+            android:onClick="MemPlus" />
 
         <Button
             android:layout_width="wrap_content"
@@ -82,7 +84,9 @@
             android:id="@+id/msub"
             android:layout_row="3"
             android:layout_column="1"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:onClick="MemMinus"
+            android:nestedScrollingEnabled="false" />
 
         <Button
             android:layout_width="wrap_content"
@@ -91,7 +95,8 @@
             android:id="@+id/mr"
             android:layout_row="3"
             android:layout_column="2"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:onClick="MemR" />
 
         <Button
             android:layout_width="wrap_content"
@@ -100,7 +105,8 @@
             android:id="@+id/mc"
             android:layout_row="3"
             android:layout_column="3"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:onClick="MemC" />
 
         <Button
             android:layout_width="wrap_content"
@@ -252,7 +258,8 @@
             android:layout_row="7"
             android:layout_column="3"
             android:textSize="28sp"
-            android:onClick="operatorClicked" />
+            android:onClick="operatorClicked"
+            android:singleLine="true" />
 
     </GridLayout>
 </RelativeLayout>
